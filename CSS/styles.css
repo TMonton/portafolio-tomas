@@ -198,6 +198,19 @@ body {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Sombra blanca sutil */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   overflow: hidden;
+
+  display: flex; /* Flex para distribuir contenido */
+  flex-direction: column; /* Vertical */
+}
+
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+.project-card .card-body .d-flex {
+  margin-top: auto; /* Empuja los botones hacia abajo */
 }
 
 .project-card:hover {
@@ -225,6 +238,7 @@ body {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     border-color: #FFFFFF;
 }
+
 
 
 /* --- Sección Habilidades --- */
